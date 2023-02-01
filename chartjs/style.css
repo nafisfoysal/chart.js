@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    overflow: none;
+    background-color: #FFFFFF;
+}
+
+:root {
+    --bordercolor: #eceef5;
+    --background: #FFFFFF;
+    --color: #ffffff;
+    --sdbackground: #1B1C29;
+    --btmenubackground: #fafaf6;
+    --cardbackground: #FFFFFF;
+}
+
+/* --------------------------------------
+  top menu css start
+-------------------------------------- */
+#topmenu_sidemenuwrap {
+    width: 1440px;
+    height: 1484px;
+    margin: auto;
+    position: relative;
+}
+
+#topmenu_sidemenuwrap #topBar {
+    height: 74px;
+    width: 100%;
+    background: var(--background);
+}
+
+#topmenu_sidemenuwrap #topBar .topMenu {
+    position: relative;
+    background: var(--background);
+}
+
+#topmenu_sidemenuwrap #topBar .topMenu .logo {
+    width: 100px;
+    height: 74px;
+    position: absolute;
+    left: 0px;
+    background: var(--background);
+}
+
+#topmenu_sidemenuwrap #topBar .topMenu .logo a img {
+    width: 74.13px;
+    background: var(--background);
+
+}
+
+#topmenu_sidemenuwrap #topBar .topMenu .about {
+    width: 320px;
+    position: absolute;
+    right: 0px;
+    display: flex;
+    border-left: 2px solid #DDE0EA;
+    background: var(--background);
+}
+
+#topmenu_sidemenuwrap #topBar .topMenu .about .bel {
+    width: 50px;
+    height: 100%;
+    background: var(--background);
+}
+
+#topmenu_sidemenuwrap #topBar .topMenu .about .bel a {
+    height: 74px;
+    background: var(--background);
+
+}
+
+#topmenu_sidemenuwrap #topBar .topMenu .about .bel a i {
+    width: 15px;
+    height: 100%;
+    font-size: 20px;
+    margin-top: 30.97px;
+    margin-Left: 2.5px;
+    color: #D1D2D4;
+    background: var(--background);
+
+}
+
+#topmenu_sidemenuwrap #topBar .topMenu .about .bel {
+    width: 50px;
+    margin-left: 23px;
+    background: var(--background);
+}
+
+#topmenu_sidemenuwrap #topBar .topMenu .about .userMenu {
+    height: 74px;
+    display: flex;
+    padding-left: 5px;
+    border-left: 2px solid var(--bordercolor);
+    background: var(--background);
+}
+
+#topmenu_sidemenuwrap #topBar .topMenu .about .userMenu .text {
+    margin: 25px 3px 0px 10px;
+    background: var(--background);
+}
+
+#topmenu_sidemenuwrap #topBar .topMenu .about .userMenu .text span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    background: var(--background);
+}
+
+#topmenu_sidemenuwrap #topBar .topMenu .about .userMenu .text span:hover {
+    cursor: pointer;
+}
+
+#topmenu_sidemenuwrap #topBar .topMenu .about .userMenu .icon {
+    margin: 25px 0px 0px 0px;
+    background: var(--background);
+}
+
+#topmenu_sidemenuwrap #topBar .topMenu .about .userMenu .icon i {
+    background: var(--background);
+}
+
+#topmenu_sidemenuwrap #topBar .topMenu .about .userMenu .image {
+    background: var(--background);
+}
+
+#topmenu_sidemenuwrap #topBar .topMenu .about .userMenu .image img {
+    margin: 7px 0px 0px 15px;
+    width: 52px;
+    height: 75%;
+    background: var(--background);
+
+}
+
+/* --------------------------------------
+  top menu css end
+-------------------------------------- */
+/* -- ------------------------------------
+    side nav menu css start
+ ---------------------------------- -- */
+
+#topmenu_sidemenuwrap #sideNav {}
+
+#topmenu_sidemenuwrap #sideNav .sidemenu {
+    width: 74px;
+    height: 1484px;
+    background-color: var(--sdbackground);
+}
+
+#topmenu_sidemenuwrap #sideNav .sidemenu .menu {
+    background-color: var(--sdbackground);
+}
+
+#topmenu_sidemenuwrap #sideNav .sidemenu .menu ul {
+    margin: auto;
+    width: 20px;
+    background-color: var(--sdbackground);
+}
+
+#topmenu_sidemenuwrap #sideNav .sidemenu .menu ul li {
+    padding-top: 30px;
+    background-color: var(--sdbackground);
+}
+
+#topmenu_sidemenuwrap #sideNav .sidemenu .menu ul li a {
+    width: 30px;
+    text-decoration: none;
+    background-color: var(--sdbackground);
+}
+
+#topmenu_sidemenuwrap #sideNav .sidemenu .menu ul li a:hover {}
+
+#topmenu_sidemenuwrap #sideNav .sidemenu .menu ul li a span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: #F44A25;
+    font-size: 13px;
+    margin-left: -22px;
+    background-color: var(--sdbackground);
+}
+
+#topmenu_sidemenuwrap #sideNav .sidemenu .menu ul li a img {
+    width: 100%;
+    height: 20px;
+    color: #FFFFFF;
+    background-color: var(--sdbackground);
+}
+
+/* -- ------------------------------------
+    side nav menu css end
+ ---------------------------------- -- */
+
+/* ------------------------------------
+    bottom nav menu css start
+    ---------------------------------- -- */
+#topmenu_sidemenuwrap #bt_nv_menu {
+    border-top: 5px solid var(--bordercolor);
+}
+
+#topmenu_sidemenuwrap #bt_nv_menu .bt_menu {
+    width: 1366px;
+    float: right;
+    position: absolute;
+    top: 74px;
+    right: 0px;
+    height: 61px;
+    background-color: var(--btmenubackground);
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+
+#topmenu_sidemenuwrap #bt_nv_menu .bt_menu .bthd {
+    margin: 23px 0px 0px 35px;
+    background-color: var(--btmenubackground);
+}
+
+#topmenu_sidemenuwrap #bt_nv_menu .bt_menu .bthd h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+#topmenu_sidemenuwrap #bt_nv_menu .bt_menu .btproducts {
+    display: flex;
+    background-color: var(--btmenubackground);
+}
+
+#topmenu_sidemenuwrap #bt_nv_menu .bt_menu .btproducts .text {
+    margin: 19px 0px 0px 0px;
+    background-color: var(--btmenubackground);
+}
+
+#topmenu_sidemenuwrap #bt_nv_menu .bt_menu .btproducts .text b {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+#topmenu_sidemenuwrap #bt_nv_menu .bt_menu .btproducts .inpt {
+    text-transform: capitalize;
+    background-color: var(--btmenubackground);
+    /* display: flex; */
+}
+
+#topmenu_sidemenuwrap #bt_nv_menu .bt_menu .btproducts .inpt #pdselect {
+    padding: 10px 10px;
+    margin: 11px 0px 0px 15px;
+    border-radius: 7px;
+    border-color: var(--bordercolor);
+}
+
+#topmenu_sidemenuwrap #bt_nv_menu .bt_menu .btproducts .inpt #pdselect option {
+    font-size: 18px;
+}
+
+#topmenu_sidemenuwrap #bt_nv_menu .bt_menu .btproducts .inpt .datepick {
+    float: right;
+}
+
+#topmenu_sidemenuwrap #bt_nv_menu .bt_menu .btproducts .inpt .datepick {
+    border: 1px solid var(--bordercolor);
+    padding: 9px 10px;
+    margin: 11px 35px 0px 15px;
+
+    border-radius: 7px;
+}
+
+#topmenu_sidemenuwrap #bt_nv_menu .bt_menu .btproducts .inpt .datepick span {}
+
+#topmenu_sidemenuwrap #bt_nv_menu .bt_menu .btproducts .inpt .datepick img {}
+
+/* ------------------------------------
+    bottom nav menu css end
+    ---------------------------------- -- */
+
+
+/* -- ------------------------------------
+counter card css start
+---------------------------------- -- */
+
+
+#topmenu_sidemenuwrap #card_counter {
+    position: absolute;
+    width: 1297px;
+    padding: 25px 35px;
+    top: 139px;
+    left: 74px;
+}
+
+#topmenu_sidemenuwrap #card_counter .counter {
+    display: flex;
+    justify-content: space-between;
+}
+
+#topmenu_sidemenuwrap #card_counter .counter .card {
+    width: 307px;
+    position: relative;
+    height: 123px;
+    background-color: var(--cardbackground);
+    border-radius: 10px;
+    box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.068);
+}
+
+#topmenu_sidemenuwrap #card_counter .counter .card .icon {
+    position: absolute;
+    left: 35px;
+    top: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+}
+
+#topmenu_sidemenuwrap #card_counter .counter .card .icon img {
+    position: absolute;
+    color: #df6868;
+    top: 23px;
+    left: 23px;
+    background-color: #D7D7DA;
+}
+
+#topmenu_sidemenuwrap #card_counter .counter .card .para {
+    position: absolute;
+    top: 36px;
+    left: 130px;
+}
+
+#topmenu_sidemenuwrap #card_counter .counter .card .para p {
+    color: rgb(8, 8, 8);
+    display: inline-block;
+    background-color: var(--cardbackground);
+}
+
+#topmenu_sidemenuwrap #card_counter .counter .card .count {
+    position: absolute;
+    left: 130px;
+    bottom: 20px;
+}
+
+#topmenu_sidemenuwrap #card_counter .counter .card .count span {
+    color: rgb(8, 8, 8);
+    font-size: 30px;
+    font-weight: 600;
+    background-color: var(--cardbackground);
+}
+
+#topmenu_sidemenuwrap #card_counter .counter .card .active> :first-child {
+    background-color: #F44A25;
+    color: #ffffff;
+}
+
+#topmenu_sidemenuwrap #card_counter .counter>:first-child {
+    background-color: #F44A25;
+}
+
+/*-- ------------------------------------
+    counter card css end
+    ---------------------------------- --
+ */
+
+
+/* -- ------------------------------------
+    rating analysist  css start
+---------------------------------- -- */
+
+#topmenu_sidemenuwrap #rating_section {}
+
+#topmenu_sidemenuwrap #rating_section .rating {
+    position: absolute;
+    width: 1297px;
+    /* height: 359px; */
+    /* padding: 25px 35px; */
+    top: 298px;
+    left: 74px;
+}
+
+#topmenu_sidemenuwrap #rating_section .rating .chartMenu {
+    display: flex;
+    margin: 0px 0px 0px 30px;
+    justify-content: space-between;
+}
+
+#topmenu_sidemenuwrap #rating_section .rating .chartMenu .heading {
+    margin-top: 29px;
+}
+
+#topmenu_sidemenuwrap #rating_section .rating .chartMenu .heading h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+}
+
+#topmenu_sidemenuwrap #rating_section .rating .chartMenu .slBtn {
+    margin-top: 29px;
+}
+
+#topmenu_sidemenuwrap #rating_section .rating .chartMenu .slBtn select {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    padding: 8px 10px;
+    border: 1px solid rgba(27, 28, 41, 0.1);
+    border-radius: 5px;
+}
+
+#topmenu_sidemenuwrap #rating_section .rating .chartCard {}
+
+#topmenu_sidemenuwrap #rating_section .rating .chartCard .chartBox {
+    height: 400px;
+}
+
+#topmenu_sidemenuwrap #rating_section .rating .chartCard .chartBox #myChart {}
+
+/* -- ------------------------------------
+    rating analysist  css end
+---------------------------------- -- */
+
+/* -- ------------------------------------
+    product statement  css start
+---------------------------------- -- */
+#topmenu_sidemenuwrap #product_statement {}
+
+#topmenu_sidemenuwrap #product_statement .product {
+    position: absolute;
+    width: 1297px;
+    height: 359px;
+    /* padding: 25px 35px; */
+    top: 670px;
+    left: 74px;
+}
+
+#topmenu_sidemenuwrap #product_statement .product .chartMenu {
+    display: flex;
+    margin: 0px 0px 0px 30px;
+    justify-content: space-between;
+}
+
+#topmenu_sidemenuwrap #product_statement .product .chartMenu .heading {
+    margin-top: 29px;
+}
+
+#topmenu_sidemenuwrap #product_statement .product .chartMenu .heading h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+}
+
+#topmenu_sidemenuwrap #product_statement .product .chartMenu .midpara {
+    display: flex;
+    margin-top: 29px;
+}
+
+#topmenu_sidemenuwrap #product_statement .product .chartMenu .midpara span {
+    width: 13px;
+    height: 13px;
+    background: #2F80ED;
+    border-radius: 2px;
+    margin-left: 10px;
+}
+
+#topmenu_sidemenuwrap #product_statement .product .chartMenu .midpara :nth-child(3) {
+    background: #F2C94C;
+}
+
+#topmenu_sidemenuwrap #product_statement .product .chartMenu .midpara :nth-child(5) {
+    background-color: #F44A25;
+}
+
+#topmenu_sidemenuwrap #product_statement .product .chartMenu .midpara p {
+    margin-left: 10px;
+}
+
+#topmenu_sidemenuwrap #product_statement .product .chartMenu .slBtn {
+    margin-top: 29px;
+}
+
+#topmenu_sidemenuwrap #product_statement .product .chartMenu .slBtn select {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    padding: 8px 10px;
+    border: 1px solid rgba(27, 28, 41, 0.1);
+    border-radius: 5px;
+}
+
+
+#topmenu_sidemenuwrap #product_statement .product .chartCard {}
+
+#topmenu_sidemenuwrap #product_statement .product .chartCard .chartBox {}
+
+#topmenu_sidemenuwrap #product_statement .product .chartCard .chartBox #myChartProduct {
+    height: 300px;
+}
+
+/* -- ------------------------------------
+    product statement  css end
+---------------------------------- -- */
+
+
+/* -- ------------------------------------
+    Product Impressions  css start
+---------------------------------- -- */
+#topmenu_sidemenuwrap #Product_Impressions {}
+
+#topmenu_sidemenuwrap #Product_Impressions .Impressions {
+    position: absolute;
+    width: 1297px;
+    height: 359px;
+    /* padding: 25px 35px; */
+    top: 1042px;
+    left: 74px;
+}
+
+#topmenu_sidemenuwrap #Product_Impressions .Impressions .chartMenu {
+    display: flex;
+    margin: 0px 0px 0px 30px;
+    justify-content: space-between;
+}
+
+#topmenu_sidemenuwrap #Product_Impressions .Impressions .chartMenu .heading {
+    margin-top: 29px;
+}
+
+#topmenu_sidemenuwrap #Product_Impressions .Impressions .chartMenu .heading h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    color: rgba(27, 28, 41, 1);
+}
+
+#topmenu_sidemenuwrap #Product_Impressions .Impressions .chartMenu .midpara {
+    display: flex;
+    margin-top: 29px;
+}
+
+#topmenu_sidemenuwrap #Product_Impressions .Impressions .chartMenu .midpara span {}
+
+#topmenu_sidemenuwrap #Product_Impressions .Impressions .chartMenu .midpara {
+    margin-left: -300px;
+}
+
+#topmenu_sidemenuwrap #Product_Impressions .Impressions .chartMenu .midpara .para1 {
+    margin-left: 30px;
+}
+#topmenu_sidemenuwrap #Product_Impressions .Impressions .chartMenu .midpara .para1 .active{
+    color: rgba(244, 74, 37, 1);
+}
+
+#topmenu_sidemenuwrap #Product_Impressions .Impressions .chartMenu .midpara .para1 p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #1b1c29de;
+}
+
+#topmenu_sidemenuwrap #Product_Impressions .Impressions .chartMenu .midpara .para1 span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #1B1C29;
+    opacity: 0.5;
+}
+
+#topmenu_sidemenuwrap #Product_Impressions .Impressions .chartMenu .slBtn {
+    margin-top: 29px;
+}
+
+#topmenu_sidemenuwrap #Product_Impressions .Impressions .chartMenu .slBtn select {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    padding: 8px 10px;
+    border: 1px solid rgba(27, 28, 41, 0.1);
+    border-radius: 5px;
+}
+
+
+#topmenu_sidemenuwrap #Product_Impressions .Impressions .chartCard {}
+
+#topmenu_sidemenuwrap #Product_Impressions .Impressions .chartCard .chartBox {}
+
+#topmenu_sidemenuwrap #Product_Impressions .Impressions .chartCard .chartBox #myChartImpressions {
+    height: 371px;
+}
+
+/* -- ------------------------------------
+    Product Impressions  css end
+---------------------------------- -- */

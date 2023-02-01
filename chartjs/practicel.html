@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href=""> -->
+</head>
+
+<body>
+
+
+  <div>
+    <canvas id="myChart"></canvas>
+  </div>
+
+
+
+
+
+
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js"
+    integrity="sha512-JPcRR8yFa8mmCsfrw4TNte1ZvF1e3+1SdGMslZvmrzDYxS69J7J49vkFL8u6u8PlPJK+H3voElBtUCzaXj+6ig=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+
+
+
+    const data = {
+      labels: ['0', '1', '2', '3', '4', '5', '6', '7', '8'],
+      datasets: [{
+        label: 'Weekly Sales',
+        //data: [1000, 700, 500, 600, 700],
+        data: [
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+          { x: Math.random(), y: Math.random(), r: Math.random() * 20 },
+        ],
+        backgroundColor: [
+          '#F78066'
+        ],
+        borderColor: [
+          'rgba(255, 26, 104, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+        ],
+        // borderRadius: 10,
+        borderWidth: 1,
+        // barPercentage: 1.249,
+      }]
+    };
+
+    // config 
+    const config = {
+      type: 'bubble',
+      data,
+      options: {
+        // maintainAspectRatio: false,
+        // indexAxis:'y',
+        scales: {
+          y: {
+            beginAtZero: true,
+            grid: {
+              drawOnChartArea: true
+            }
+          },
+          x: {
+            grid: {
+              drawOnChartArea: true,
+            }
+          }
+        },
+        layout: {
+          padding: {
+            left: 0
+          }
+        }
+      }
+    };
+
+    // render init block
+    const myChart = new Chart(
+      document.getElementById('myChart'),
+      config
+    );
+
+
+
+
+        // new Chart(ctx, {
+        //     type: 'bar',
+        //     data: {
+        //         labels: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ' ', '11', ' ', '13', ' ', '15', ' ', '17', ' ', '19',
+        //             ' ', '21', ' ', '23', ' ', '25', ' ', '27', ' ', '29'],
+        //         datasets: [{
+        //             label: '# of Votes',
+        //             data: [12, 19, 3, 5, 2, 3, 7, 4, 6, 8, 3, 2, 9, 10, 6, 12, 15, 7, 17, 18, 4, 8, 4, 9, 3, 14, 13, 10, 5, 8],
+        //             backgroundColor: [
+        //                 '#DDDDDF', '#DDDDDF', '#DDDDDF', '#DDDDDF', '#DDDDDF', '#DDDDDF', '#DDDDDF', '#DDDDDF', '#F44A25', '#F44A25',
+        //                 '#F44A25', '#F44A25', '#F44A25', '#F44A25', '#F44A25', '#DDDDDF', '#DDDDDF', '#DDDDDF', '#DDDDDF', '#DDDDDF',
+        //                 '#DDDDDF', '#DDDDDF', '#DDDDDF', '#DDDDDF', '#DDDDDF', '#DDDDDF', '#DDDDDF', '#DDDDDF', '#DDDDDF'
+        //             ],
+        //             borderRadius: 4,
+        //             borderWidth: 1
+        //         }]
+        //     },
+        //     options: {
+        //         tickLength: 6,
+        //         plugins: {
+        //             subtitle: {
+        //                 display: true,
+        //                 align: 'end',
+        //                 position: 'top',
+        //                 text: ['Custom Chart Subtitle', '2403 Imprressions']
+        //             },
+        //             title: {
+        //                 display: true,
+        //                 color: '#8b93a2',
+        //                 align: 'end',
+        //                 position: 'top',
+        //                 text: 'Chart title',
+        //             },
+        //         },
+        //         scales: {
+        //             y: {
+        //                 beginAtZero: true,
+        //             },
+        //         }
+        //     }
+        // });
+        // // render init block
+        // const myChartImpressions = new Chart(
+        //     document.getElementById('myChartImpressions'),
+        //     config_2
+        // );
+        // ======================================
+        // Product Impressions bar chart js end
+        // ======================================
+
+
+
+
+
+
+
+
+
+        // const ctx = document.getElementById('myChart');
+
+        // new Chart(ctx, {
+        //     type: 'bar',
+        //     data: {
+        //         labels: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ' ', '11', ' ', '13', ' ', '15', ' ', '17', ' ', '19',
+        //             ' ', '21', ' ', '23', ' ', '25', ' ', '27', ' ', '29'],
+        //         datasets: [{
+        //             label: '# of Votes',
+        //             data: [12, 19, 3, 5, 2, 3, 7, 4, 6, 8, 3, 2, 9, 10, 6, 12, 15, 7, 17, 18, 4, 8, 4, 9, 3, 14, 13, 10, 5, 8],
+        //             backgroundColor: [
+        //                 '#DDDDDF', '#DDDDDF', '#DDDDDF', '#DDDDDF', '#DDDDDF', '#DDDDDF', '#DDDDDF', '#DDDDDF', '#F44A25', '#F44A25',
+        //                 '#F44A25', '#F44A25', '#F44A25', '#F44A25', '#F44A25', '#DDDDDF', '#DDDDDF', '#DDDDDF', '#DDDDDF', '#DDDDDF',
+        //                 '#DDDDDF', '#DDDDDF', '#DDDDDF', '#DDDDDF', '#DDDDDF', '#DDDDDF', '#DDDDDF', '#DDDDDF', '#DDDDDF'
+        //             ],
+        //             borderRadius: 4,
+        //             borderWidth: 1
+        //         }]
+        //     },
+        //     options: {
+        //         tickLength: 6,
+        //         plugins: {
+        //             subtitle: {
+        //                 display: true,
+        //                 align: 'end',
+        //                 position: 'top',
+        //                 text: ['Custom Chart Subtitle', '2403 Imprressions']
+        //             },
+        //             title: {
+        //                 display: true,
+        //                 color: '#8b93a2',
+        //                 align: 'end',
+        //                 position: 'top',
+        //                 text: 'Chart title',
+        //             },
+        //         },
+        //         scales: {
+        //             y: {
+        //                 beginAtZero: true,
+        //             },
+        //         }
+        //     }
+        // });
+
+  </script>
+
+
+
+
+
+
+</body>
+
+</html>
